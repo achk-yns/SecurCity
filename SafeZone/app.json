@@ -1,0 +1,48 @@
+{
+  "expo": {
+    "name": "SafeZone",
+    "slug": "SafeZone-App",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/union@3x.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "This app uses your location to show your position on the map.",
+        "UIStatusBarStyle": "UIStatusBarStyleDarkContent"
+      },
+      "bundleIdentifier": "securCity"
+    },
+    "android": {
+      "androidStatusBar": {
+        "barStyle": "dark-content",
+        "backgroundColor": "#FFFFFF"
+      },
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "permissions": [
+        "ACCESS_FINE_LOCATION"
+      ],
+      "package": "com.yns_dev.SafeZoneApp"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "ac0437c2-b311-42b3-95af-7b3c187eb0bb"
+      }
+    }
+  }
+}

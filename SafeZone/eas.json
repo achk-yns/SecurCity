@@ -1,0 +1,31 @@
+{
+  "cli": {
+    "version": ">= 9.1.0"
+  },
+  "build": {
+    "development": {
+      "developmentClient": true,
+      "distribution": "internal"
+    },
+    "preview": {
+      "distribution": "internal"
+    },
+    "production": {
+      "env": {
+        "EXPO_PUBLIC_API_URL": "https://api.production.com",
+        "APP_ICON": "./assets/union@3x.png",
+        "APP_NAME": "SecurCity"
+      }
+    },
+    "test": {
+      "env": {
+        "EXPO_PUBLIC_API_URL": "https://api.test.com",
+        "APP_ICON": "./assets/union@3x.png",
+        "APP_NAME": "SecurCity"
+      }
+    }
+  },
+  "submit": {
+    "production": {}
+  }
+}
